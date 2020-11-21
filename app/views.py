@@ -4,7 +4,7 @@ from .request import get_news_source,get_news_article
 
 # Views
 @app.route('/')
-def index():
+def source():
 
     '''
     View root page function that returns the index page and its data
@@ -19,7 +19,7 @@ def index():
 
     title ='Exclusive News Headlines'
 
-    return render_template('index.html',general = general, entertainment = entertainment, business = business, health = health, sports = sports, science = science, technology = technology )
+    return render_template('source.html',general = general, entertainment = entertainment, business = business, health = health, sports = sports, science = science, technology = technology )
 
 @app.route('/news/<id>')
 def articles(id):
