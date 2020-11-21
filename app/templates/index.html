@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+
+<!-- {% for item in data%}
+<ul>
+    <p><img src='{{item.news_urlToImage}}' alt=""></p>
+    <p>{{item.news_title}}</p>
+    <p>{{item.news_description}}</p>
+    <p>{{item.news_author}}</p>
+    <p>{{item.news_publishedAt}}</p>
+    <p><a href='{{item.news_url}}'>{{item.news_url}}</a></p>
+</ul>
+{% endfor %} -->
+
+{% for item in data%}
+
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="{{item.news_urlToImage}}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h3 class="card-title">{{item.news_title}}</h3>
+                <p class="card-text">{{item.news_description}}</p>
+                <p>{{item.news_author}}</p>
+                <p>{{item.news_publishedAt}}</p>
+                <p class="card-text"><a href='{{item.news_url}}'>{{item.news_url}}</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
