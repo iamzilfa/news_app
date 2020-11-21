@@ -1,10 +1,14 @@
 class Config:
 
-    News_Api_Link = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey={}'
+    NEWS_API_LINK = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey={}'
 
-class DevConfig:
-
-    debug = True
-    
 class ProdConfig:
     pass
+    
+  
+class DevConfig:
+
+    NEWS_API_LINK = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey={}'
+
+    DEBUG = True
+    
