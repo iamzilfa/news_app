@@ -7,8 +7,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="jumbotron" style="background-image: url('https://res.cloudinary.com/zilfa/image/upload/v1606156035/markus-winkler-aId-xYRTlEc-unsplash_z3pwuk.jpg'); background-size: cover; height: 150vh; background-position: center;"></div>
-<div class="container-fluid">
+<div class="jumbotron" style="margin-top: -1cm;background-image: url('https://res.cloudinary.com/zilfa/image/upload/v1606156035/markus-winkler-aId-xYRTlEc-unsplash_z3pwuk.jpg'); background-size: cover; height: 150vh; background-position: center;"></div>
+
+<div class="container-fluid" style="background-color: rgb(241, 248, 247);margin-top: -1cm;">
 
     <div class="card row m-1">
         <h3 style="font-weight: bold;">General News</h3>
@@ -28,7 +29,7 @@
     <div class="card row m-1">
         <h3 style="font-weight: bold;">Technology News</h3>
         <ul>
-            {{ macro.displaySourcesList(technology)}}}
+            {{ macro.displaySourcesList(technology)}}
         </ul>
     </div>
 
