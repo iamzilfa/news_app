@@ -30,6 +30,7 @@
 ## Support and contact details
 If anyone need support concerning my project or anything related, just reach out to zilcyam@gmail.com
  
+[Here is the link](https://zilfanewsapp.herokuapp.com/ "News-App")
 
 ### License
 
