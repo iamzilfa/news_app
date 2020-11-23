@@ -1,7 +1,7 @@
 # NEWS-APP
 
 ## Description
-  An application that will help a user list and preview news articles from various sources.
+  An application that will help users list and preview news articles from various sources.
 
 ## Author(s) information
 [iamzilfa](https://github.com/iamzilfa)
