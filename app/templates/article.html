@@ -4,6 +4,7 @@
 {% block styles%}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 {% endblock %}
 
 
@@ -16,7 +17,7 @@
             <div class="thumbnail">
                 <img src="{{article.urlToImage}}" alt="" style="height:300px"></a>
                 <div class="caption">
-                    <h4><a style="text-transform: capitalize;color: rgb(32, 23, 150)" href="{{article.url}}" target="_blank"><strong>{{article.title}}</strong></a></h4>
+                    <h4><a style="text-transform: capitalize;color: rgb(32, 23, 150);font-family: 'Acme', sans-serif;" href="{{article.url}}" target="_blank"><strong>{{article.title}}</strong></a></h4>
                     <p><small>{{article.description}}....</small><a style="color: rgb(32, 23, 150)" href="{{article.url}}" target="_blank"><b>see more</b></a></p>
                     <p><small>{{article.publishedAt}}</small></p>
                 </div>
