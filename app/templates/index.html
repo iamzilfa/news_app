@@ -1,33 +1,63 @@
 {% extends 'base.html'%}
+{% import 'macros.html' as macro%}
 
-<!-- {% for item in data%}
-<ul>
-    <p><img src='{{item.news_urlToImage}}' alt=""></p>
-    <p>{{item.news_title}}</p>
-    <p>{{item.news_description}}</p>
-    <p>{{item.news_author}}</p>
-    <p>{{item.news_publishedAt}}</p>
-    <p><a href='{{item.news_url}}'>{{item.news_url}}</a></p>
-</ul>
-{% endfor %} -->
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+{% endblock %}
 
-{% for item in data%}
+{% block content %}
+<div class="jumbotron" style="background-image: url('https://res.cloudinary.com/zilfa/image/upload/v1606156035/markus-winkler-aId-xYRTlEc-unsplash_z3pwuk.jpg'); background-size: cover; height: 150vh; background-position: center;"></div>
+<div class="container-fluid">
 
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row no-gutters">
-        <div class="col-md-4">
-            <img src="{{item.news_urlToImage}}" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h3 class="card-title">{{item.news_title}}</h3>
-                <p class="card-text">{{item.news_description}}</p>
-                <p>{{item.news_author}}</p>
-                <p>{{item.news_publishedAt}}</p>
-                <p class="card-text"><a href='{{item.news_url}}'>{{item.news_url}}</a></p>
-            </div>
-        </div>
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">General News</h3>
+        <ul>
+
+            {{ macro.displaySourcesList(general)}}
+        </ul>
+    </div>
+
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">Business News</h3>
+        <ul>
+            {{ macro.displaySourcesList(business)}}
+        </ul>
+    </div>
+
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">Technology News</h3>
+        <ul>
+            {{ macro.displaySourcesList(technology)}}}
+        </ul>
+    </div>
+
+    <div class="card row m-1">
+
+        <h3 style="font-weight: bold;">Health News</h3>
+        <ul>
+
+            {{ macro.displaySourcesList(health)}}
+        </ul>
+    </div>
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">Entertainment News</h3>
+        <ul>
+            {{ macro.displaySourcesList(entertainment)}}
+        </ul>
+    </div>
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">Sports News</h3>
+        <ul>
+
+            {{ macro.displaySourcesList(sports)}}
+        </ul>
+    </div>
+    <div class="card row m-1">
+        <h3 style="font-weight: bold;">Science News</h3>
+        <ul>
+            {{ macro.displaySourcesList(science)}}
+        </ul>
     </div>
 </div>
-
-{% endfor %}
+{% endblock%}
