@@ -10,10 +10,10 @@
 {% block content %}
 <div class="jumbotron" style="margin-top: -1cm;background-image: url('https://res.cloudinary.com/zilfa/image/upload/v1606156035/markus-winkler-aId-xYRTlEc-unsplash_z3pwuk.jpg'); background-size: cover; height: 150vh; background-position: center;"></div>
 
-<div class="container-fluid" style="background-color: rgb(241, 248, 247);margin-top: -1cm;">
+<div class="container-fluid" style="background-color: rgba(241, 248, 247, 0.349);margin-top: -1cm;">
 
     <div class="card row">
-        <h4>General News</h4>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">General News</h3>
         <ul>
 
             {{ macro.displaySourcesList(general)}}
@@ -21,14 +21,14 @@
     </div>
 
     <div class="card row">
-        <h4>Business News</h4>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Business News</h3>
         <ul>
             {{ macro.displaySourcesList(business)}}
         </ul>
     </div>
 
     <div class="card row">
-        <h4>Technology News</h4>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Technology News</h3>
         <ul>
             {{ macro.displaySourcesList(technology)}}
         </ul>
@@ -36,27 +36,27 @@
 
     <div class="card row">
 
-        <h3>Health News</h3>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Health News</h3>
         <ul>
 
             {{ macro.displaySourcesList(health)}}
         </ul>
     </div>
     <div class="card row">
-        <h3>Entertainment News</h3>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Entertainment News</h3>
         <ul>
             {{ macro.displaySourcesList(entertainment)}}
         </ul>
     </div>
     <div class="card row">
-        <h3>Sports News</h3>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Sports News</h3>
         <ul>
 
             {{ macro.displaySourcesList(sports)}}
         </ul>
     </div>
     <div class="card row">
-        <h3>Science News</h3>
+        <h3 style="font-family: 'Times New Roman', Times, serif;margin-left: 20px;">Science News</h3>
         <ul>
             {{ macro.displaySourcesList(science)}}
         </ul>

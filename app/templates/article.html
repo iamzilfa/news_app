@@ -9,17 +9,17 @@
 
 
 <div class="container">
-    <h3>World News - Read The Latest Articles</h3>
+    <h3 style="font-family: 'Times New Roman', Times, serif;">World News - Read The Latest Articles</h3>
 
     {% for article_row in articles | batch(3)%}
     <div class="row">
-        {% for article in article_row%}
+        {% for article in article_row %}
         <div class="col-md-4">
             <div class="thumbnail">
                 <img src="{{article.urlToImage}}" alt="" style="height:200px"></a>
                 <div class="caption">
                     <h4><a style="text-transform: capitalize;color: rgb(32, 23, 150);font-family: 'Acme', sans-serif;" href="{{article.url}}" target="_blank"><strong>{{article.title}}</strong></a></h4>
-                    <p><small>{{article.description}}....</small><a style="color: rgb(32, 23, 150)" href="{{article.url}}" target="_blank"><b>see more</b></a></p>
+                    <p style="font-family: 'Times New Roman', Times, serif;"><small>{{article.description}}....</small><a style="color: rgb(32, 23, 150)" href="{{article.url}}" target="_blank"><b>see more</b></a></p>
                     <p><small>{{article.publishedAt}}</small></p>
                 </div>
             </div>
