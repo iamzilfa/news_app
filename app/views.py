@@ -29,7 +29,7 @@ def index():
 @app.route('/sources/<id>')
 def articles(id):
     '''
-    View article page function that returns the movie details page and its data
+    View article page function that returns the article details page and its data
     '''
     articles = get_articles(id)
     title = f'You are viewing {id}'
